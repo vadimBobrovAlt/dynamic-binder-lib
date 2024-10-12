@@ -1,0 +1,22 @@
+{
+  "name": "bobrovva/dynamic_binder_lib",
+  "description": "Динамическая привязка реализаций к интерфейсу",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "bobrovva\\dynamic_binder_lib\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.1",
+    "laravel/framework": "^11.9"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "bobrovva\\dynamic_binder_lib\\Providers\\DynamicBinderServiceProvider"
+      ]
+    }
+  }
+}
