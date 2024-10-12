@@ -10,11 +10,11 @@ class ImplementationHelper
      * Выполняет привязку интерфейса к реализации на основе условия.
      *
      * @param string $interface Интерфейс, который нужно привязать.
-     * @param bool $condition Условие, на основании которого выбирается реализация.
+     * @param int|string|bool $condition Условие, на основании которого выбирается реализация.
      *
      * @return void
      */
-    public static function bind(string $interface, bool $condition): void
+    public static function bind(string $interface, int|string|bool $condition): void
     {
         $bindings = config('bindings');
         if (isset($bindings[$interface][$condition])) {
