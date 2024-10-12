@@ -43,6 +43,12 @@
         $middleware->append(DynamicBinderMiddleware::class);
     })
    ```
+   
+
+4. **Публикация конфигурации**
+```php
+php artisan vendor:publish --tag=dynamic-binder
+```
 
 ## Пример использования
 
